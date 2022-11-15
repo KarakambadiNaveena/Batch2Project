@@ -148,9 +148,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\2022-08-18 %282%29.png" />
     <Content Include="Images\doremon.jpg" />
-    <Content Include="Images\Screenshot %28191%29.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -202,6 +200,7 @@
     <Content Include="Views\User\DeletePlace.cshtml" />
     <Content Include="Views\User\PlaceDetails.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\User\Explore.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

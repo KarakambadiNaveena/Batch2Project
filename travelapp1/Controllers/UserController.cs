@@ -89,7 +89,7 @@ namespace travelapp1.Controllers
             TempData["user1"] = s;
            TempData["loc"]  = k1.Location;
 
-            k = k.Where(x => (x.UserId == s.UserId )&& (x.Location == k1.Location)).ToList();
+            k = k.Where(x => (x.UserId == s.UserId )&& (x.Location.Trim() == k1.Location.Trim())).ToList();
             return View(k);
 
         }
@@ -233,6 +233,15 @@ namespace travelapp1.Controllers
             {
                 return View();
             }
+        }
+        public ActionResult Explore()
+        {
+            User s = (User)TempData["user1"];
+            TempData["User1"] = s;
+            List<PlacesToVisit> k = cd.GetPlaces();
+            k=k.Where(x=>x.UserId != s.UserId).ToList();
+            return View(k);
+
         }
     }
 }
